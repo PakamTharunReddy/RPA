@@ -1,0 +1,196 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Mouse" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Mouse_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Mouse" sap:VirtualizedContainerService.HintSize="876.0000000000001,948.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,676.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,566.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e69735b-245d-4b2d-80ad-2dfd8d519410" InformativeScreenshot="efcaf88fa8aa4692bab2a363d79844d8" Selector="&lt;html app='chrome.exe' title='BP Travel - Log In' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SPAN' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Text 'P'" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="ClickText_1" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" Text="software">
+            <ui:ClickText.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickText.CursorPosition>
+            <ui:ClickText.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c9c533d-19c9-416d-a570-b51d0c26d88f" InformativeScreenshot="9cefacda1e78cdef1b239a9de3d6994a" Selector="&lt;html app='chrome.exe' title='UiPath - Wikipedia' /&gt;&lt;webctrl idx='2' tag='P' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickText.Target>
+          </ui:ClickText>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe uipath'" sap:VirtualizedContainerService.HintSize="416,179.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ca10ca58-807c-431c-a654-725f770a0305" Selector="&lt;html app='chrome.exe' title='uipath - Google Search' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:ClickOCRText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OCR Text 'P'" sap:VirtualizedContainerService.HintSize="484.8,248.8" sap2010:WorkflowViewState.IdRef="ClickOCRText_1" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" Text="machine language">
+      <ui:ClickOCRText.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickOCRText.CursorPosition>
+      <ui:ClickOCRText.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="kxGax7xUklPVUfsOo2WfWjkCk9oEM8pi3iHdyhNNNh3SoPiJY521P6li9PPyKcqPq/p62kO9fcnGaK2sIgMF8w==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="300,24.8" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+        </ActivityFunc>
+      </ui:ClickOCRText.OCREngine>
+      <ui:ClickOCRText.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fc1e958-142e-4afd-a4b0-9fc5c44b7a7e" InformativeScreenshot="11f5142d81581230728d967332b04dfa" Selector="&lt;html app='chrome.exe' title='Software - Wikipedia' /&gt;&lt;webctrl idx='3' tag='P' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickOCRText.Target>
+    </ui:ClickOCRText>
+  </Sequence>
+</Activity>
